@@ -10,13 +10,15 @@ const Tools = () => {
       .then((data) => setTools(data));
   }, []);
   return (
-    <div className="mt-5">
-      <h1 className="text-3xl text-secondary font-bold text-center">
+    <div className="mt-5 px-12">
+      <h1 className="text-3xl text-secondary font-bold uppercase text-center">
         Our Power Tools
       </h1>
-      {tools.map((tool) => (
-        <Tool key={tool._id} tool={tool}></Tool>
-      ))}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        {tools.map((tool) => (
+          <Tool key={tool._id} tool={tool}></Tool>
+        ))}
+      </div>
     </div>
   );
 };

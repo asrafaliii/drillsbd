@@ -20,8 +20,8 @@
   {
     "_id": 3,
     "img": "https://i.ibb.co/K0L6LD1/drill-3.jpg",
-    "name": "BLACK+DECKER KR554RE Corded Variable Speed Reversible Hammer Drill Machine",
-    "description": "Variable speed for ultimate finger tip control for all drilling applications. Reverse brush system for full torque and power in forward and reverse, lock on button for continuous use",
+    "name": "Corded Variable Speed Reversible Hammer Drill Machine",
+    "description": "Variable speed for ultimate finger tip control for all drilling applications. Reverse brush system.",
     "price": 4899,
     "minimum_order": 100,
     "available_quantity": 1000
@@ -30,7 +30,7 @@
     "_id": 4,
     "img": "https://i.ibb.co/7vJWfRK/drill-4-2.jpg",
     "name": "Small Angle Grinder Machine (Corded) for Grinding",
-    "description": "Tool body (layered with special material for firm grip), 3 Position side-handle and LoOn Switch (Dust Sealed) enables easy, comfortable and continuous operation The product is manufactured by Stanley Black & Decker with registered",
+    "description": "Tool body (layered with special material for firm grip), 3 Position ",
     "price": 1800,
     "minimum_order": 100,
     "available_quantity": 1500
@@ -38,8 +38,8 @@
   {
     "_id": 5,
     "img": "https://i.ibb.co/Xxwmt4q/dril-5.jpg",
-    "name": "Cheston 13mm Impact Drill Machine Reversible Hammer Driver",
-    "description": "First you need to make a hole with help of a nail and hammer and then used the drill machine with the drill bit. If you do it directly the drill bit is bound to break or the machine will not function",
+    "name": "Cheston Impact Drill Machine Reversible Hammer Driver",
+    "description": "First you need to make a hole with help of a nail and hammer and then used the drill machine with the drill bit. If you do it directly the drill bit is bound to break.",
     "price": 2099,
     "minimum_order": 100,
     "available_quantity": 1200

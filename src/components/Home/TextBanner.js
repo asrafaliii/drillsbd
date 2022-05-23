@@ -1,6 +1,4 @@
 import React from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 
 const TextBanner = () => {
   return (
@@ -21,7 +19,6 @@ const TextBanner = () => {
         </p>
         <ul className="mt-2">
           <li>
-            {/* <FontAwesomeIcon icon={faAnglesRight}></FontAwesomeIcon> */}
             Stationary power tools for metalworking are usually called machine
             tools
           </li>
