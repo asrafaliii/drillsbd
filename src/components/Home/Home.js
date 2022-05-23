@@ -3,6 +3,7 @@ import Banner from "./Banner";
 import BusinessSummary from "./BusinessSummary";
 // import BusinessSummary from "./BusinessSummary";
 import Client from "./Client";
+import Testimonials from "./Testimonials";
 import TextBanner from "./TextBanner";
 import Tools from "./Tools";
 
@@ -14,6 +15,7 @@ const Home = () => {
       <Client />
       <Tools />
       <BusinessSummary />
+      <Testimonials />
     </div>
   );
 };
