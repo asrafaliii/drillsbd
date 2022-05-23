@@ -1,5 +1,4 @@
 import React from "react";
-import PrimaryButton from "../Shared/PrimaryButton";
 
 const Banner = () => {
   return (
@@ -19,7 +18,7 @@ const Banner = () => {
             Most Popular. Production Monitoring. Trade Assurance. Logistics
             Service. Types: Apparel, Tools and Hardware, Home Appliance.
           </p>
-          <PrimaryButton>Buy Now</PrimaryButton>
+          <button class="btn btn-primary">Buy Now</button>
         </div>
       </div>
     </div>
