@@ -1,0 +1,56 @@
+[
+  {
+    "_id": 1,
+    "img": "https://i.ibb.co/GxrZ0G9/drill-1.jpg",
+    "name": "Cheston Rotary Hammer Drill Machine",
+    "description": "Optimum drilling diameter in concrete: Up-to 20MM ,Everyday hammer drilling in concrete, masonry and natural stone",
+    "price": 1899,
+    "minimum_order": 100,
+    "available_quantity": 1500
+  },
+  {
+    "_id": 2,
+    "img": "https://i.ibb.co/pQmv7Nw/drill-2.jpg",
+    "name": "Bosch Gbm 350 Professional Rotary Drill",
+    "description": "Powerful 350W motor for robust Wood Metal Working applications Effective use grip",
+    "price": 2899,
+    "minimum_order": 100,
+    "available_quantity": 2500
+  },
+  {
+    "_id": 3,
+    "img": "https://i.ibb.co/K0L6LD1/drill-3.jpg",
+    "name": "BLACK+DECKER KR554RE Corded Variable Speed Reversible Hammer Drill Machine",
+    "description": "Variable speed for ultimate finger tip control for all drilling applications. Reverse brush system for full torque and power in forward and reverse, lock on button for continuous use",
+    "price": 4899,
+    "minimum_order": 100,
+    "available_quantity": 1000
+  },
+  {
+    "_id": 4,
+    "img": "https://i.ibb.co/7vJWfRK/drill-4-2.jpg",
+    "name": "Small Angle Grinder Machine (Corded) for Grinding",
+    "description": "Tool body (layered with special material for firm grip), 3 Position side-handle and LoOn Switch (Dust Sealed) enables easy, comfortable and continuous operation The product is manufactured by Stanley Black & Decker with registered",
+    "price": 1800,
+    "minimum_order": 100,
+    "available_quantity": 1500
+  },
+  {
+    "_id": 5,
+    "img": "https://i.ibb.co/Xxwmt4q/dril-5.jpg",
+    "name": "Cheston 13mm Impact Drill Machine Reversible Hammer Driver",
+    "description": "First you need to make a hole with help of a nail and hammer and then used the drill machine with the drill bit. If you do it directly the drill bit is bound to break or the machine will not function",
+    "price": 2099,
+    "minimum_order": 100,
+    "available_quantity": 1200
+  },
+  {
+    "_id": 6,
+    "img": "https://i.ibb.co/jVzQwqS/drill-6.jpg",
+    "name": "BOSCH GWS 600 professional Angle Grinder for Metal Working",
+    "description": "Optimum drilling diameter in concrete: Up-to 20MM ,Everyday hammer drilling in concrete, masonry and natural stone",
+    "price": 3095,
+    "minimum_order": 100,
+    "available_quantity": 5500
+  }
+]
