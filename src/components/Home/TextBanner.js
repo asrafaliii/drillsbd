@@ -2,15 +2,15 @@ import React from "react";
 
 const TextBanner = () => {
   return (
-    <div class="flex gap-4 px-12 mt-6">
-      <div class="flex-1">
-        <h1 class="text-4xl uppercase">New Tools is Released!</h1>
-        <h2 class="text-2xl">
+    <div className="flex gap-4 px-12 mt-6">
+      <div className="flex-1">
+        <h1 className="text-4xl uppercase">New Tools is Released!</h1>
+        <h2 className="text-2xl">
           A power tool is a tool that is actuated by an additional power source
           and mechanism other than the solely manual labor used with hand tools.
         </h2>
       </div>
-      <div class="flex-1">
+      <div className="flex-1">
         <p>
           While hand-held power tools are extremely helpful, they also produce
           large amounts of noise and vibrations. Using power tools without

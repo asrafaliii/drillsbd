@@ -1,23 +1,23 @@
 [
   {
     "_id": 1,
-    "name": "Jhankar Mahbub",
+    "name": "Kety Perry",
     "review": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptates quo incidunt harum minus mollitia",
     "location": "USA",
-    "img": ""
+    "img": "https://i.ibb.co/7ghZbhh/team-4.jpg"
   },
   {
-    "_id": 1,
+    "_id": 2,
     "name": "Winson Herry",
     "review": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptates quo incidunt harum minus mollitia",
     "location": "England",
-    "img": ""
+    "img": "https://i.ibb.co/4j367Kz/team-3.jpg"
   },
   {
-    "_id": 1,
+    "_id": 3,
     "name": "Steve Smith",
     "review": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptates quo incidunt harum minus mollitia",
     "location": "Australia",
-    "img": ""
+    "img": "https://i.ibb.co/FVc17Yz/team-1.jpg"
   }
 ]
