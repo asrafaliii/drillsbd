@@ -1,12 +1,12 @@
 import React from "react";
 
-const Review = ({ reviews }) => {
-  console.log(reviews);
-  const { name, review, location, img } = reviews;
+const Review = ({ review }) => {
+  console.log(review);
+  const { name, post, location, img } = review;
   return (
     <div className="card w-96 bg-base-100 shadow-xl">
       <div className="card-body">
-        <p>"{review}"</p>
+        <p>"{post}"</p>
         <div className="avatar">
           <div className="w-24 rounded-full">
             <img src={img} />
