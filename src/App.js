@@ -5,8 +5,10 @@ import AddReview from "./components/Dashboard/AddReview";
 import Dashboard from "./components/Dashboard/Dashboard";
 import MyOrder from "./components/Dashboard/MyOrder";
 import MyProfile from "./components/Dashboard/MyProfile";
+import BuyNow from "./components/Home/BuyNow";
 import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
+import RequireAuth from "./components/Login/RequireAuth";
 import SignUp from "./components/Login/SignUp";
 import MyPortfolio from "./components/MyPortfolio/MyPortfolio";
 import Footer from "./components/Shared/Footer";
@@ -18,6 +20,14 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route
+          path="buynow"
+          element={
+            <RequireAuth>
+              <BuyNow />
+            </RequireAuth>
+          }
+        />
         <Route path="blog" element={<Blog />} />
         <Route path="blog" element={<MyPortfolio />} />
         <Route path="dashboard" element={<Dashboard />}>

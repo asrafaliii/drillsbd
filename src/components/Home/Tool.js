@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Tool = ({ tool }) => {
   const {
@@ -10,6 +11,12 @@ const Tool = ({ tool }) => {
     minimum_order,
     available_quantity,
   } = tool;
+
+  const navigate = useNavigate();
+
+  const navigateBuyNow = (event) => {
+    navigate("/buynow");
+  };
 
   return (
     <div className="card w-96 bg-base-100 shadow-xl mt-5">
@@ -25,7 +32,9 @@ const Tool = ({ tool }) => {
         <p>Minimum Order :{minimum_order}</p>
         <p>Available Quantity:{available_quantity}</p>
         <div className="card-actions">
-          <button className="btn btn-primary">Buy Now</button>
+          <button onClick={navigateBuyNow} className="btn btn-primary">
+            Buy Now
+          </button>
         </div>
       </div>
     </div>
