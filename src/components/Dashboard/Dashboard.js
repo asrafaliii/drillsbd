@@ -17,6 +17,8 @@ const Dashboard = () => {
           {/* <!-- Sidebar content here --> */}
           <li>
             <Link to="/myorder">My Order</Link>
+            <Link to="/addreview">Add A Review</Link>
+            <Link to="/myprofile">My Profile</Link>
           </li>
         </ul>
       </div>
