@@ -4,6 +4,7 @@ import Blog from "./components/Blog/Blog";
 import AddReview from "./components/Dashboard/AddReview";
 import AddTools from "./components/Dashboard/AddTools";
 import Dashboard from "./components/Dashboard/Dashboard";
+import ManageTools from "./components/Dashboard/ManageTools";
 import MyOrder from "./components/Dashboard/MyOrder";
 import MyProfile from "./components/Dashboard/MyProfile";
 import BuyNow from "./components/Home/BuyNow";
@@ -36,6 +37,7 @@ function App() {
           <Route path="addreview" element={<AddReview />} />
           <Route path="myprofile" element={<MyProfile />} />
           <Route path="addtools" element={<AddTools />} />
+          <Route path="managetools" element={<ManageTools />} />
         </Route>
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<SignUp />} />
