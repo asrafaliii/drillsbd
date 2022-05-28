@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
+import BuyNow from "./BuyNow";
 import Tool from "./Tool";
 
 const Tools = () => {
   const [tools, setTools] = useState([]);
+  const [product, setPorduct] = useState([]);
 
   useEffect(() => {
     fetch("https://glacial-falls-47354.herokuapp.com/tool")

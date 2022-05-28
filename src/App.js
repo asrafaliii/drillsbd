@@ -31,7 +31,7 @@ function App() {
         <Route path="blog" element={<Blog />} />
         <Route path="blog" element={<MyPortfolio />} />
         <Route path="dashboard" element={<Dashboard />}>
-          <Route path="myorder" element={<MyOrder />} />
+          <Route index element={<MyOrder />} />
           <Route path="addreview" element={<AddReview />} />
           <Route path="myprofile" element={<MyProfile />} />
         </Route>

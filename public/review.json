@@ -4,20 +4,20 @@
     "name": "Kety Perry",
     "post": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptates quo incidunt harum minus mollitia",
     "location": "USA",
-    "img": "https://i.ibb.co/7ghZbhh/team-4.jpg"
+    "rating": ["5.0", "4.0", "3.0", "2.0", "1.0"]
   },
   {
     "_id": 2,
     "name": "Winson Herry",
     "post": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptates quo incidunt harum minus mollitia",
     "location": "England",
-    "img": "https://i.ibb.co/4j367Kz/team-3.jpg"
+    "rating": ["5.0", "4.0", "3.0", "2.0", "1.0"]
   },
   {
     "_id": 3,
     "name": "Steve Smith",
     "post": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptates quo incidunt harum minus mollitia",
     "location": "Australia",
-    "img": "https://i.ibb.co/FVc17Yz/team-1.jpg"
+    "rating": ["5.0", "4.0", "3.0", "2.0", "1.0"]
   }
 ]

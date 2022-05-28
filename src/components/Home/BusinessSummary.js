@@ -29,18 +29,34 @@ const BusinessSummary = () => {
       <div className="summary"></div>
       <div className="flex mt-5 px-12">
         <div className="flex-1 text-center">
+          <img
+            className=" text-center w-24"
+            src="https://i.ibb.co/sv4F0Ty/happiness.png"
+          />
           <h1 className="text-3xl font-bold">10M+</h1>
           <h1>Happy Client</h1>
         </div>
         <div className="flex-1 text-center">
+          <img
+            className=" text-center w-24"
+            src="https://i.ibb.co/7gR1xnN/gift.png"
+          />
           <h1 className="text-3xl font-bold">100+</h1>
           <h1>Our Product</h1>
         </div>
         <div className="flex-1 text-center">
+          <img
+            className=" text-center w-24"
+            src="https://i.ibb.co/fxHP1LD/calendar.png"
+          />
           <h1 className="text-3xl font-bold">26+</h1>
           <h1>Years of experience</h1>
         </div>
         <div className="flex-1 text-center">
+          <img
+            className=" text-center w-24"
+            src="https://i.ibb.co/vm3MQBx/worldwide.png"
+          />
           <h1 className="text-3xl font-bold">20+</h1>
           <h1>Countries</h1>
         </div>

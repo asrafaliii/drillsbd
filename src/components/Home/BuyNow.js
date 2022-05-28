@@ -1,7 +1,7 @@
 import React from "react";
 
 const BuyNow = () => {
-  return <div>BuyNow</div>;
+  return <div>Buy Now</div>;
 };
 
 export default BuyNow;
