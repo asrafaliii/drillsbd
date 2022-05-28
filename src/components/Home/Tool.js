@@ -14,8 +14,8 @@ const Tool = ({ tool }) => {
 
   const navigate = useNavigate();
 
-  const navigateBuyNow = (event) => {
-    navigate("/buynow");
+  const navigateBuyNow = (id) => {
+    navigate(`/buynow/${id}`);
   };
 
   return (
@@ -32,7 +32,10 @@ const Tool = ({ tool }) => {
         <p>Minimum Order :{minimum_order}</p>
         <p>Available Quantity:{available_quantity}</p>
         <div className="card-actions">
-          <button onClick={navigateBuyNow} className="btn btn-primary">
+          <button
+            onClick={() => navigateBuyNow(_id)}
+            className="btn btn-primary"
+          >
             Buy Now
           </button>
         </div>
