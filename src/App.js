@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Blog from "./components/Blog/Blog";
 import AddReview from "./components/Dashboard/AddReview";
+import AddTools from "./components/Dashboard/AddTools";
 import Dashboard from "./components/Dashboard/Dashboard";
 import MyOrder from "./components/Dashboard/MyOrder";
 import MyProfile from "./components/Dashboard/MyProfile";
@@ -34,6 +35,7 @@ function App() {
           <Route index element={<MyOrder />} />
           <Route path="addreview" element={<AddReview />} />
           <Route path="myprofile" element={<MyProfile />} />
+          <Route path="addtools" element={<AddTools />} />
         </Route>
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<SignUp />} />

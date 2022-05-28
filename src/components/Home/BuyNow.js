@@ -12,14 +12,22 @@ const BuyNow = () => {
       .then((res) => res.json())
       .then((data) => setTools(data));
   }, []);
+
+  const handleOrder = (event) => {
+    event.preventDefault();
+  };
+
   return (
     <div className="px-24 mt-5">
       <div class="hero min-h-screen border rounded-lg shadow-2xl">
         <div class="hero-content flex-col lg:flex-row">
           <img src={tools.img} class="max-w-lg " />
           <div>
-            <h1 class="text-3xl font-bold">{tools.name}</h1>
-            <form className="grid grid-cols-1 gap-4 mt-2 justify-items-center">
+            <form
+              onSubmit={handleOrder}
+              className="grid grid-cols-1 gap-4 mt-2 justify-items-center"
+            >
+              <h1 class="text-3xl font-bold">{tools.name}</h1>
               <input
                 type="number"
                 name="number"
