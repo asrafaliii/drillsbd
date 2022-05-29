@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { useParams } from "react-router-dom";
+import auth from "../../firebase.init";
+// import { toast } from "react-toastify";
 
 const BuyNow = () => {
   const { productId } = useParams();
   const [tools, setTools] = useState({});
+  const [user, loading, error] = useAuthState(auth);
 
   useEffect(() => {
     const url = `http://localhost:5000/tool/${productId}`;
@@ -15,6 +19,27 @@ const BuyNow = () => {
 
   const handleOrder = (event) => {
     event.preventDefault();
+    const qnt = event.target.qnt.value;
+    console.log(qnt);
+    const order = {
+      toolId: tools._id,
+      quanty: qnt,
+      name: tools.name,
+      clientEmail: user.email,
+      clientName: user.displayName,
+    };
+
+    fetch("http://localhost:5000/order", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(order),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      });
   };
 
   return (
@@ -30,7 +55,7 @@ const BuyNow = () => {
               <h1 class="text-3xl font-bold">{tools.name}</h1>
               <input
                 type="number"
-                name="number"
+                name="qnt"
                 placeholder="Qnt"
                 className="input input-bordered w-full max-w-xs"
                 min="100"
@@ -39,13 +64,15 @@ const BuyNow = () => {
               <input
                 type="text"
                 name="name"
-                placeholder="Your Name"
+                disabled
+                value={user?.displayName || ""}
                 className="input input-bordered w-full max-w-xs"
               />
               <input
                 type="email"
                 name="email"
-                placeholder="Your Email"
+                disabled
+                value={user?.email || ""}
                 className="input input-bordered w-full max-w-xs"
               />
               <input
