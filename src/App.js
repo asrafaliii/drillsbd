@@ -17,6 +17,8 @@ import Footer from "./components/Shared/Footer";
 import Navbar from "./components/Shared/Navbar";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import MakeAdmin from "./components/Dashboard/MakeAdmin";
+import ManageOrder from "./components/Dashboard/ManageOrder";
 
 function App() {
   return (
@@ -40,6 +42,8 @@ function App() {
           <Route path="myprofile" element={<MyProfile />} />
           <Route path="addtools" element={<AddTools />} />
           <Route path="managetools" element={<ManageTools />} />
+          <Route path="manageorder" element={<ManageOrder />} />
+          <Route path="makeadmin" element={<MakeAdmin />} />
         </Route>
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<SignUp />} />

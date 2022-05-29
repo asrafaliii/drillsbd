@@ -20,10 +20,14 @@ const BuyNow = () => {
   const handleOrder = (event) => {
     event.preventDefault();
     const qnt = event.target.qnt.value;
-    console.log(qnt);
+    const phone = event.target.phone.value;
+    const address = event.target.address.value;
+    console.log(qnt, phone, address);
     const order = {
       toolId: tools._id,
       quanty: qnt,
+      phone: phone,
+      address: address,
       name: tools.name,
       clientEmail: user.email,
       clientName: user.displayName,
