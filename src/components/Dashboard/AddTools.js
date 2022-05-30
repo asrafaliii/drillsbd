@@ -10,7 +10,7 @@ const AddTools = () => {
   } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    const url = `http://localhost:5000/tool`;
+    const url = `https://glacial-falls-47354.herokuapp.com/tool`;
     fetch(url, {
       method: "POST",
       headers: {

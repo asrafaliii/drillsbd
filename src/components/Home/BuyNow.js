@@ -10,7 +10,7 @@ const BuyNow = () => {
   const [user, loading, error] = useAuthState(auth);
 
   useEffect(() => {
-    const url = `http://localhost:5000/tool/${productId}`;
+    const url = `https://glacial-falls-47354.herokuapp.com/tool/${productId}`;
 
     fetch(url)
       .then((res) => res.json())
@@ -33,7 +33,7 @@ const BuyNow = () => {
       clientName: user.displayName,
     };
 
-    fetch("http://localhost:5000/order", {
+    fetch("https://glacial-falls-47354.herokuapp.com/order", {
       method: "POST",
       headers: {
         "content-type": "application/json",

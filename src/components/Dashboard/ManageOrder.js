@@ -4,12 +4,13 @@ import auth from "../../firebase.init";
 
 const ManageOrder = () => {
   const [orders, setOrders] = useState([]);
-  console.log(orders);
   const [user] = useAuthState(auth);
 
   useEffect(() => {
     if (user) {
-      fetch(`http://localhost:5000/order?clientEmail=${user.email}`)
+      fetch(
+        `https://glacial-falls-47354.herokuapp.com/order?clientEmail=${user.email}`
+      )
         .then((res) => res.json())
         .then((data) => setOrders(data));
     }
@@ -18,7 +19,7 @@ const ManageOrder = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you sure?");
     if (proceed) {
-      const url = `http://localhost:5000/order/${id}`;
+      const url = `https://glacial-falls-47354.herokuapp.com/order/${id}`;
       fetch(url, {
         method: "DELETE",
       })

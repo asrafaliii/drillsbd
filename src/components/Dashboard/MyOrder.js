@@ -8,7 +8,9 @@ const MyOrder = () => {
 
   useEffect(() => {
     if (user) {
-      fetch(`http://localhost:5000/order?clientEmail=${user.email}`)
+      fetch(
+        `https://glacial-falls-47354.herokuapp.com/order?clientEmail=${user.email}`
+      )
         .then((res) => res.json())
         .then((data) => setOrders(data));
     }

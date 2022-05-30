@@ -40,13 +40,35 @@ function App() {
           <Route index element={<MyOrder />} />
           <Route path="addreview" element={<AddReview />} />
           <Route path="myprofile" element={<MyProfile />} />
-          <Route path="addtools" element={<AddTools />} />
+          <Route
+            path="addtools"
+            element={
+              <RequireAuth>
+                <AddTools />
+              </RequireAuth>
+            }
+          />
           <Route path="managetools" element={<ManageTools />} />
-          <Route path="manageorder" element={<ManageOrder />} />
-          <Route path="makeadmin" element={<MakeAdmin />} />
+          <Route
+            path="manageorder"
+            element={
+              <RequireAuth>
+                <ManageOrder />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="makeadmin"
+            element={
+              <RequireAuth>
+                <MakeAdmin />
+              </RequireAuth>
+            }
+          />
         </Route>
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<SignUp />} />
+        <Route path="portfolio" element={<MyPortfolio />} />
       </Routes>
       <Footer />
       <ToastContainer />
